@@ -34,7 +34,7 @@ Review text: "{review_text}"
 Write the response."""
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.0-flash-lite",
         contents=user_message,
         config={"system_instruction": SYSTEM_PROMPT},
     )
